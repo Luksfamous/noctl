@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fashion Store</h1>
+
+        <nav>
+            <a href="#">Beranda</a>
+            <a href="#">Produk</a>
+            <a href="#">Tentang</a>
+            <a href="#">Kontak</a>
+        </nav>
+
+        <div class="cart">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Koleksi Fashion Terbaru</h2>
+        <p>Tampil lebih percaya diri dengan gaya terbaikmu.</p>
+    </section>
+
+    <section class="products">
+
+        <div class="card">
+            <div class="image-placeholder">
+                Tempat Gambar Produk
+            </div>
+
+            <h3>Kaos Oversize Premium</h3>
+            <p class="price">Rp79.000</p>
+
+            <button onclick="beliProduk('Kaos Oversize Premium',79000)">
+                Beli Sekarang
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="image-placeholder">
+                Tempat Gambar Produk
+            </div>
+
+            <h3>Hoodie Premium</h3>
+            <p class="price">Rp149.000</p>
+
+            <button onclick="beliProduk('Hoodie Premium',149000)">
+                Beli Sekarang
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="image-placeholder">
+                Tempat Gambar Produk
+            </div>
+
+            <h3>Jaket Streetwear</h3>
+            <p class="price">Rp199.000</p>
+
+            <button onclick="beliProduk('Jaket Streetwear',199000)">
+                Beli Sekarang
+            </button>
+        </div>
+
+    </section>
+
+    <div style="text-align:center; margin:30px;">
+        <button onclick="checkout()">
+            Checkout
+        </button>
+    </div>
+
+    <footer>
+        © 2026 Fashion Store
+    </footer>
+
+    <script src="data.js"></script>
+
+</body>
+</html>
